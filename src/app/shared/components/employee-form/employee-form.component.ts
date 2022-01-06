@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Employee } from '../../models/employee.interface';
+import { EmployeeFormModule } from 'src/app/shared/components/employee-form/employee-form.module';
+import { EmployeesService } from 'src/app/pages/employees/employees.service';
 
 @Component({
   selector: 'app-employee-form',
@@ -13,7 +15,7 @@ export class EmployeeFormComponent implements OnInit {
   employee: Employee;
   employeeForm!: FormGroup;
 
-  constructor(private router: Router, private fb:FormBuilder) {
+  constructor(private router: Router, private fb:FormBuilder, private employeesSvc: EmployeesService) {
     const navigation = this.router.getCurrentNavigation();
     this.employee = navigation?.extras?.state?.value;
     this.initForm();

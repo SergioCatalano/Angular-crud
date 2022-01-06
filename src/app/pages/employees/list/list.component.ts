@@ -18,25 +18,25 @@ export class ListComponent implements OnInit {
     {
       name: 'Sergio',
       lastName: 'Cataldo',
-      email: 'chupala@tuvieja.com',
+      email: 'correo@random.com',
       startDate: '17/02/2021',
     },
     {
       name: 'Maria',
-      lastName: 'DB',
-      email: 'mamala@tuvieja.com',
+      lastName: 'Fernandez',
+      email: 'otrocorreo@random.com',
       startDate: '12/12/2020',
     },
     {
       name: 'Pepe',
-      lastName: 'Grillo',
-      email: 'tu@vieja.com',
+      lastName: 'Gomez',
+      email: 'otro@random.com',
       startDate: '10/11/2011',
     },
     {
       name: 'Ermenegildo',
-      lastName: 'Aristuboludo del Valle',
-      email: 'make@yourmother.com',
+      lastName: 'Lopez',
+      email: 'make@random.com',
       startDate: '03/06/1999',
     }
   ];
